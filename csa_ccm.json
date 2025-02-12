@@ -1,0 +1,2147 @@
+{
+    "Audit & Assurance": {
+        "A&A-04": {
+            "title": "Requirements Compliance",
+            "control_specification": "Verify compliance with all relevant standards, regulations, legal/contractual, and statutory requirements applicable to the audit.",
+            "implementation_guidelines": "Verify compliance with all relevant standards applicable to the audit, such as:\n\na. Country regulations\nb. Standards and certifications\nc. Industry sector regulations\nd. International applicable regulations such as those regarding privacy and cybersecurity",
+            "aws_tcbs": [],
+            "aws_scbs": [
+                "AWS-SCB-01"
+            ],
+            "azure_tcbs": [],
+            "azure_scbs": [
+                "AZ-SCB-01"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "aws_scbs": [],
+        "azure_scbs": [],
+        "m365_scbs": [],
+        "acronym": "A&A",
+        "header_color": "E2F0DB",
+        "k8s_scbs": []
+    },
+    "Application & Interface Security": {
+        "AIS-06": {
+            "title": "Automated Secure Application Deployment",
+            "control_specification": "Establish and implement strategies and capabilities for secure, standardized, and compliant application deployment. Automate where possible.",
+            "implementation_guidelines": "The strategies should include:\na. Defined security and automation requirements based on an organization's application deployment needs and standards.\nb. Defined roles and responsibilities between security, application teams, and other stakeholder groups.\nc. Identification and integration with existing application deployment processes.\nd. Customization of secure application deployment for deployment types such as operating systems, network connections, configuration, etc.\ne. Logging and monitoring of secure application deployment so that data issues can be promptly addressed by the appropriate people (incident or forensics).\nf. Metrics to effectively measure deployment success.\n\nThe capabilities should be based on the organization's SSDLC and should include, for instance:\ng. Defined and approved list of deployment and automation technologies.\nh. Enablement for team members (e.g., developers, administrators, etc.) to dynamically address security issues when needed.\n\nThe strategies and capabilities should be reviewed periodically by senior management.",
+            "aws_tcbs": [],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [
+                "K8S-POD-020"
+            ],
+            "k8s_scbs": []
+        },
+        "aws_scbs": [],
+        "azure_scbs": [],
+        "acronym": "AIS",
+        "header_color": "D7E0F1",
+        "m365_scbs": [],
+        "k8s_scbs": []
+    },
+    "Business Continuity Management and Operational Resilience": {
+        "BCR-02": {
+            "title": "Risk Assessment and Impact Analysis",
+            "control_specification": "Determine the impact of business disruptions and risks to establish criteria for developing business continuity and operational resilience strategies and capabilities.",
+            "implementation_guidelines": "The business impact analysis (BIA) should incorporate the following components:\na. Identification of critical products and services with their inherent risks.\nb. The likelihood and impact of each risk.\nc. The organization's risk appetite and tolerance.\nd. The identification of risk dependencies.\ne. The identification of appropriate and relevant countermeasures to prevent, detect, and react to the identified risks.\n\nThe impact analysis should incorporate the following elements:\nf. The immediate and ongoing impacts resulting from disruptions.\ng. A recovery time objective (RTO) and recovery point objective (RPO).\nh. The estimated internal and external resources required for recovery and resumption.",
+            "aws_tcbs": [],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [
+                "AZ-SCB-07"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "BCR-03": {
+            "title": "Business Continuity Strategy",
+            "control_specification": "Establish strategies to reduce the impact of, withstand, and recover from business disruptions within risk appetite.",
+            "implementation_guidelines": "Business continuity and operational resilience strategies should:\na. Be developed by both cloud service providers and cloud service consumers with consideration of acceptable limits regarding risk appetite and tolerance.\nb. Cover all aspects of business continuity and resilience planning\u2014taking inputs from assessed impact and risks\u2014to consider activities for before, during, and after a disruption.\nc. Account for the unavailability of all relevant components required to operate the business \u201cas usual\u201d or in a disrupted mode (in parts or total) during a disruption.\nd. Cover all actions required to continue and recover prioritized activities within identified timeframes and aligned with organizational risk appetite and tolerance (including the invocation of continuity plans and crisis management capabilities).\ne. Cover all activities within the defined scope to protect prioritized activities, reduce disruption likelihood, and limit cloud capability disruption through adequate resourcing.\nf. Include detailed solutions and measures for each strategy.",
+            "aws_tcbs": [],
+            "aws_scbs": [],
+            "azure_tcbs": [
+                "AZ-MGF-002"
+            ],
+            "azure_scbs": [
+                "AZ-SCB-06"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": [
+                "K8S-SCB-20"
+            ]
+        },
+        "BCR-08": {
+            "title": "Backup",
+            "control_specification": "Periodically backup data stored in the cloud. Ensure the confidentiality, integrity and availability of the backup, and verify data restoration from backup for resiliency.",
+            "implementation_guidelines": "Implementation of backups and/or other means of data preservation (e.g., replication) should follow the following guidelines.\na. The scope, frequency, and duration of cloud data retention should comply with:\nApplicable laws\nContractual agreements with the cloud customers\nThe cloud provider\u2019s business requirements\n\nb. The backup approach, including the physical location of backup files, should comply with the privacy and data protection laws and regulations applicable to the data collected.\nc. The data backup process should be monitored by employing technical and organizational safeguards. At a minimum, malfunctions should be examined and eliminated promptly by qualified employees to support compliance with the retention\u2019s scope, frequency, and duration.\nd. Backup and restoration procedures should be periodically tested and the results documented to ensure data can be successfully restored. Tests should be designed so that the reliability of the backup media and the restoration time (RPO, RTO) can be established with sufficient certainty. Any errors and identified improvements (corrective and preventive actions) should be addressed promptly.\ne. Restorations should be carried out only after they have been approved by authorized persons (according to contractual agreements with cloud customers or the internal policies of the cloud provider).\nf. The cloud service provider, when appropriate, should be able to disclose the exercise results to the cloud services customer as part of the assurance of business continuity and resilience.\n\nAdditional guidance is also available in the NIST Special Publication 800-53 (Rev. 4) CP-9 INFORMATION SYSTEM BACKUP (latest revision).",
+            "aws_tcbs": [
+                "AWS-DOCDB-005",
+                "AWS-NEP-007",
+                "AWS-RDS-017",
+                "AWS-RESH-011"
+            ],
+            "aws_scbs": [],
+            "azure_tcbs": [
+                "AZ-KV-005",
+                "AZ-ST-011"
+            ],
+            "azure_scbs": [
+                "AZ-SCB-05",
+                "AZ-SCB-10"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": [
+                "K8S-SCB-19"
+            ]
+        },
+        "aws_scbs": [],
+        "azure_scbs": [],
+        "m365_scbs": [],
+        "acronym": "BCR",
+        "header_color": "FDF188",
+        "k8s_scbs": []
+    },
+    "Change Control and Configuration Management": {
+        "CCC-01": {
+            "title": "Change Management Policy and Procedures",
+            "control_specification": "Establish, document, approve, communicate, apply, evaluate and maintain policies and procedures for managing the risks associated with applying changes to organization assets, including application, systems, infrastructure, configuration, etc., regardless of whether the assets are managed internally or externally (i.e., outsourced). Review and update the policies and procedures at least annually.",
+            "implementation_guidelines": "A documented and approved change management policy (and associated process documentation) should:\na. Ensure that changes are tested, documented, risk assessed, and authorized in a consistent and timely manner. All changes (e.g., major, minor, and emergency and the qualifying criteria) in organization assets, applications, system software, and informational technology (IT) infrastructure (e.g., hardware, operating systems, communications equipment, and software) and associated configurations should be under the scope of the change management policy.\nb. Be communicated and made accessible to all employees and interested parties involved within the change management process (e.g., service/application owners, project leaders, IT, operating systems staff, contractors, etc.).\nc. Include the management of emergency changes.",
+            "aws_tcbs": [
+                "AWS-CONF-005",
+                "AWS-CONF-006"
+            ],
+            "aws_scbs": [],
+            "azure_tcbs": [
+                "AZ-ST-003"
+            ],
+            "azure_scbs": [],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "CCC-02": {
+            "title": "Quality Testing",
+            "control_specification": "Follow a defined quality change control, approval and testing process with established baselines, testing, and release standards.",
+            "implementation_guidelines": "A plan to test and review during the development process should be prepared. This plan should include (but is not limited to) relevant activities and test inputs, and expected outputs regarding various conditions that may impact the outcome. For internal organizational developments, the team that oversees development efforts initially can perform such tests. Independent acceptance testing can then be performed (both for internal and external development sources) to determine whether the system functions as intended. Testing should be proportionate to the system\u2019s relevance based on its nature.\n\nTesting record(s) should be documented before implementing all planned changes to organization assets (including applications, systems, infrastructure, configuration, etc.), regardless of whether the assets are managed internally or externally (i.e., outsourced).\n\nThe record(s) should comprise a test plan, configuration baseline before the change, the test result, and the new configuration baseline.\n\nThe quality testing plan might align with relevant standards or guidelines (i.e., ITIL or ISO 20000, etc.)",
+            "aws_tcbs": [],
+            "aws_scbs": [
+                "AWS-SCB-39"
+            ],
+            "azure_tcbs": [],
+            "azure_scbs": [
+                "AZ-SCB-14",
+                "AZ-SCB-45",
+                "AZ-SCB-63",
+                "AZ-SCB-64"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [
+                "K8S-POD-031"
+            ],
+            "k8s_scbs": [
+                "K8S-SCB-04"
+            ]
+        },
+        "CCC-03": {
+            "title": "Change Management Technology",
+            "control_specification": "Manage the risks associated with applying changes to organization assets, including application, systems, infrastructure, configuration, etc., regardless of whether the assets are managed internally or externally (i.e., outsourced).",
+            "implementation_guidelines": "The organization should:\nCollaborate with relevant internal and external parties involved in the change management process. \nAssess the impact and type of change to determine the risk of the change before it is applied.\nAdopt Change Management Technologies to manage the change management workflow. \n\nThese tools should help adequately manage the authorization process, including activity logging. In addition, real-time reporting/monitoring capabilities should be implemented to monitor change progress so that quick decisions can be made to manage the risks of unforeseen issues due to the change implementation.\n\nUnderstanding how those relevant components impact the security and usability of the supply chain that supports organizational environments should be one aspect of such collaboration.",
+            "aws_tcbs": [
+                "AWS-CONF-002",
+                "AWS-CONF-004"
+            ],
+            "aws_scbs": [
+                "AWS-SCB-04"
+            ],
+            "azure_tcbs": [
+                "AZ-CNS-001"
+            ],
+            "azure_scbs": [
+                "AZ-SCB-12",
+                "AZ-SCB-13",
+                "AZ-SCB-15"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": [
+                "K8S-SCB-12"
+            ]
+        },
+        "CCC-04": {
+            "title": "Unauthorized Change Protection",
+            "control_specification": "Restrict the unauthorized addition, removal, update, and management of organization assets.",
+            "implementation_guidelines": "The organization should establish procedures and implement technical measures to prevent and/or detect any unwanted/unauthorized changes (e.g., additions, removals, and updates) to organizational assets production, including applications, systems, infrastructure, configuration, etc.",
+            "aws_tcbs": [],
+            "aws_scbs": [
+                "AWS-SCB-10"
+            ],
+            "azure_tcbs": [],
+            "azure_scbs": [],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [
+                "K8S-NS-002"
+            ],
+            "k8s_scbs": []
+        },
+        "CCC-06": {
+            "title": "Change Management Baseline",
+            "control_specification": "Establish change management baselines for all relevant authorized changes on organization assets.",
+            "implementation_guidelines": "A change management baseline reflects the minimum policies, procedures and technical measures established to achieve organizational objectives, and requirements (i.e., CCC-02 implementation guidelines).",
+            "aws_tcbs": [
+                "AWS-EC2-009"
+            ],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [
+                "K8S-API-008",
+                "K8S-POD-023"
+            ],
+            "k8s_scbs": []
+        },
+        "CCC-08": {
+            "title": "Exception Management",
+            "control_specification": "Implement a procedure for the management of exceptions, including emergencies, in the change and configuration process. Align the procedure with the requirements of GRC-04: Policy Exception Process.",
+            "implementation_guidelines": "The procedure for exceptions\u2019 management should include, but is not limited to:\na. Change management baselines\nb. Unauthorized assets\nc. Evidence collection and management",
+            "aws_tcbs": [
+                "AWS-INSP-002"
+            ],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "aws_scbs": [],
+        "azure_scbs": [],
+        "m365_scbs": [],
+        "acronym": "CCC",
+        "header_color": "E3D9B4",
+        "k8s_scbs": []
+    },
+    "Cryptography, Encryption & Key Management": {
+        "CEK-01": {
+            "title": "Encryption and Key Management Policy and Procedures",
+            "control_specification": "Establish, document, approve, communicate, apply, evaluate and maintain policies and procedures for Cryptography, Encryption and Key Management. Review and update the policies and procedures at least annually.",
+            "implementation_guidelines": "Policies and procedures on the use, protection, and lifetime of cryptographic keys should be developed and implemented through their full  lifecycle.\n\nPolicies and procedures include but are not limited to the following considerations:\nA. Policies and procedures relating to organization/management.\na. Roles and responsibilities (See GRM for general considerations)\nb. Data protection (DSP domain for general considerations)\n   1) Data encryption\n   2) Algorithm\nc. Change management (See CCC domain for general considerations)\n   1) Cost-Benefit analysis\nd. Risk management (See BCR/GRC domains for general considerations)\ne. Monitoring and reporting (see LOG and monitoring domain for general considerations )\nf. Transaction/activity logging (see LOG and monitoring domain for general considerations)\ng. Incident handling (see SEF domain for general considerations)\nh. Audit (See A&A domain for general considerations)\n\nB. Policies and procedures relating to key management.\na. Key generation \nb. Key distribution \nc. Key rotation \nd. Key revocation \ne. Key destruction\nf. Key activation \ng. Key suspension\nh. Key deactivation\ni. Key archival\nj. Key compromise\nk. Key recovery\nl. Key inventory management\nm. Key purposes\nn. Key access",
+            "aws_tcbs": [
+                "AWS-KMS-005"
+            ],
+            "aws_scbs": [
+                "AWS-SCB-07"
+            ],
+            "azure_tcbs": [
+                "AZ-ENC-002",
+                "AZ-POL-006",
+                "AZ-POL-007",
+                "AZ-POL-008"
+            ],
+            "azure_scbs": [],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "CEK-02": {
+            "title": "CEK Roles and Responsibilities",
+            "control_specification": "Define and implement cryptographic, encryption and key management roles and responsibilities.",
+            "implementation_guidelines": "Below are some examples of possible roles and responsibilities:\na. Keys managers should not be able to access protected data or the cryptographic engine.\nb. Separation of duties should include two or more individuals control a single process.\nc. Split Knowledge requires no one person knows the complete value of an encryption key.\nd. No one person should know the entire passphrase used to create encryption keys.\ne. Restrict access rights to the least resources required (least privilege).\nf. A policy authority is responsible for all operational cryptographic key management system (CKMS) roles and reports to the executive IT.\n\nRoles and responsibilities should be defined and followed:\na. Generation or acquisition of key information .\nb. Secure distribution of private and secret keys,and the metadata.\nc. Establishment of cryptoperiods.\nd. Key and certificate inventory management.\ne. Revocation of compromised keys and the establishment of replacement keys and/or certificates.\nf. Management of the storage and recovery of operational and backed-up key information.\ng. Storage and recovery of archived key information.\nh. Checking the integrity of stored key information before using it.\ni. Destruction of private or secret keys that are no longer required.",
+            "aws_tcbs": [
+                "AWS-KMS-004",
+                "AWS-KMS-007"
+            ],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [
+                "AZ-SCB-24"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "CEK-03": {
+            "title": "Data Encryption",
+            "control_specification": "Provide cryptographic protection to data at-rest and in-transit, using cryptographic libraries certified to approved standards.",
+            "implementation_guidelines": "Data protection/data encryption is the process of changing plaintext into ciphertext using a cryptographic algorithm and key.\na. Organizations should be able to either encrypt all information on storage devices (i.e., full disk encryption) or encrypt specific data structures (e.g., files, records, or fields).\nb. Data at rest involves databases, end-user workstations, and file servers.\nc. Data in transit involves system interfaces, public networks, and electronic messaging.\nd. Cryptography provides data protection: confidentiality, integrity, availability, and source authentication.\ne. Cryptographic key management system security policies rules need to protect the confidentiality, integrity, availability, and source authentication of all keys, algorithms, and metadata.\nf. Key management technology and processes should be NIST FIPS validated and/or National Security Agency (NSA)-approved by other relevant international standardization bodies.\ng. Approved algorithms and key sizes should reside in the CKMS.\nh. Quantum-resistant encryption is developing quickly, and it is recommended that this technology is closely monitored so the organization is not exposed.",
+            "aws_tcbs": [
+                "AWS-ACM-002",
+                "AWS-ACM-004",
+                "AWS-APIG-004",
+                "AWS-ATHE-001",
+                "AWS-ATHE-002",
+                "AWS-CLFT-004",
+                "AWS-CLFT-007",
+                "AWS-CLFT-008",
+                "AWS-CLFT-009",
+                "AWS-CLFT-010",
+                "AWS-COBD-001",
+                "AWS-COPL-001",
+                "AWS-DMS-002",
+                "AWS-DMS-003",
+                "AWS-DOCDB-001",
+                "AWS-DOCDB-004",
+                "AWS-DYDB-001",
+                "AWS-DYDB-002",
+                "AWS-EC2-006",
+                "AWS-EC2-037",
+                "AWS-EC2-038",
+                "AWS-EC2-039",
+                "AWS-EC2-045",
+                "AWS-EFS-001",
+                "AWS-EFS-003",
+                "AWS-EKS-006",
+                "AWS-ELCA-004",
+                "AWS-ELCA-005",
+                "AWS-ELSE-002",
+                "AWS-ELSE-007",
+                "AWS-ELSE-011",
+                "AWS-EMR-002",
+                "AWS-EMR-003",
+                "AWS-GLUE-001",
+                "AWS-GLUE-003",
+                "AWS-GLUE-004",
+                "AWS-GLUE-005",
+                "AWS-GLUE-006",
+                "AWS-GLUE-007",
+                "AWS-KINE-001",
+                "AWS-LAMB-006",
+                "AWS-NEP-002",
+                "AWS-RDS-003",
+                "AWS-RDS-005",
+                "AWS-RDS-012",
+                "AWS-RDS-018",
+                "AWS-RESH-006",
+                "AWS-RESH-010",
+                "AWS-S3-008",
+                "AWS-S3-021",
+                "AWS-SEMA-001",
+                "AWS-SGM-005",
+                "AWS-SGM-006",
+                "AWS-SNS-002",
+                "AWS-SQS-001",
+                "AWS-SSM-001",
+                "AWS-WOSP-001",
+                "AWS-XRAY-001"
+            ],
+            "aws_scbs": [],
+            "azure_tcbs": [
+                "AZ-APS-003",
+                "AZ-DBS-004",
+                "AZ-DS-003",
+                "AZ-DS-005",
+                "AZ-DS-019",
+                "AZ-EHB-001",
+                "AZ-EHB-003",
+                "AZ-EHB-007",
+                "AZ-LM-004",
+                "AZ-MLW-003",
+                "AZ-NT-013",
+                "AZ-NT-015",
+                "AZ-ST-002",
+                "AZ-ST-012",
+                "AZ-ST-015",
+                "AZ-SVB-003",
+                "AZ-SVB-006",
+                "AZ-VM-001",
+                "AZ-VM-002",
+                "AZ-VM-003",
+                "AZ-VM-006"
+            ],
+            "azure_scbs": [
+                "AZ-SCB-18",
+                "AZ-SCB-26"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [
+                "M365-SCB-16"
+            ],
+            "k8s_tcbs": [
+                "K8S-API-001",
+                "K8S-API-002",
+                "K8S-API-006",
+                "K8S-API-013",
+                "K8S-API-018",
+                "K8S-CM-002",
+                "K8S-ETCD-001",
+                "K8S-ETCD-002",
+                "K8S-INGS-002"
+            ],
+            "k8s_scbs": []
+        },
+        "CEK-04": {
+            "title": "Encryption Algorithm",
+            "control_specification": "Use encryption algorithms that are appropriate for data protection, considering the classification of data, associated risks, and usability of the encryption technology.",
+            "implementation_guidelines": "A risk-based approach to encryption algorithms adoption should consider, but not be limited to:\na. Cryptographic key management system algorithms should not exceed the anticipated lifetime of the CKMS and the information it protects.\nb. Cryptographic key management system security policies should protect the confidentiality, integrity, availability, and source authentication of all keys, algorithms, and metadata.\nc. The (CKMS) should include, but is not limited to:\nApproved algorithms\nHardware security modules (HSMs)\nKey sizes\nd. The adoption of the appropriate key size and algorithm types should be done based on cost-benefit analysis and the level of risk to data (please see the reference to quantum-resistant encryption in CEK-03).",
+            "aws_tcbs": [
+                "AWS-CHSM-001"
+            ],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [
+                "AZ-SCB-23"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [
+                "M365-SCB-17"
+            ],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "CEK-12": {
+            "title": "Key Rotation",
+            "control_specification": "Rotate cryptographic keys in accordance with the calculated cryptoperiod, which includes provisions for considering the risk of information disclosure and legal and regulatory requirements.",
+            "implementation_guidelines": "Key rotation generates (based on policy) a new key version of a key used to encrypt data.\na. Non-primary (old) keys should be used to decrypt data previously encrypted before re-encrypting the data with new keys.\nb. Old data may be re-encrypted using new keys based on organizational policy and technology capacity.\nc. When rotating keys, consider the following principles:\n\u2022 Cryptographic mechanism strength: algorithm, key length, and mode of operation.\n\u2022 The volume of information flow or the number of transactions.\n\u2022 The security life of the data.\n\u2022 The security functions, such as data encryption, digital signature, and key protection.\n\u2022 The number of key copies and the distribution of those copies.\nd. All relevant transitions/activity should be recorded (logged) in the inventory management system (CKMS).",
+            "aws_tcbs": [
+                "AWS-KMS-008"
+            ],
+            "aws_scbs": [],
+            "azure_tcbs": [
+                "AZ-AAD-025"
+            ],
+            "azure_scbs": [],
+            "m365_tcbs": [
+                "M365-AAD-025"
+            ],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "CEK-14": {
+            "title": "Key Revocation",
+            "control_specification": "Define, implement and evaluate processes, procedures and technical measures to destroy keys stored outside a secure environment and revoke keys stored in Hardware Security Modules (HSMs) when they are no longer needed, which include provisions for legal and regulatory requirements.",
+            "implementation_guidelines": "Key destruction removes all traces to prevent recovery by physical or electronic means.\na. When a key is to be destroyed, all key copies should be destroyed.\nb. Keys should be destroyed when they are not needed to minimize compromise risks.\nc. Secret and private keys should be destroyed so they cannot be recovered by any means.\nd. Public keys may be kept or destroyed.\ne. Notify stakeholders in advance of key destruction.\nf. Consider laws, regulations, and their retention requirements for keys and/or metadata.\ng. Key recovery information (KRI) should be protected against unauthorized disclosure or destruction.\nh. All relevant transitions/activity should be recorded (logged) in the inventory management system (CKMS).",
+            "aws_tcbs": [
+                "AWS-KMS-006"
+            ],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "CEK-18": {
+            "title": "Key Archival",
+            "control_specification": "Define, implement and evaluate processes, procedures and technical measures to manage archived keys in a secure repository requiring least privilege access, which include provisions for legal and regulatory requirements.",
+            "implementation_guidelines": "Key archiving places keys in long-term storage.\na. Archived key material can support the later recovery of information.\nb. While archived key material may be needed in the future, the key material should be destroyed when no longer required.\nc. The key recovery process should include the generation, storage, and access of the long-term storage keys used to protect backed-up and archived key information.\nd. Archives should be used for long-term key access.\ne. The inventory system should record the storage and recovery of archived key information.\nf. All relevant transitions/activity should be recorded (logged) in the inventory management system (CKMS).",
+            "aws_tcbs": [
+                "AWS-KMS-009"
+            ],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "CEK-19": {
+            "title": "Key Compromise",
+            "control_specification": "Define, implement and evaluate processes, procedures and technical measures to use compromised keys to encrypt information only in controlled circumstance, and thereafter exclusively for decrypting data and never for encrypting data, which include provisions for legal and regulatory requirements.",
+            "implementation_guidelines": "Compromised keys/states are keys that may be waiting for the performance of an investigation to determine the appropriate disposition. Compromised keys should be revoked using the organization\u2019s emergency revocation policy.\n\nWhen appropriate, relevant stakeholders should be notified that keys previously used to encrypt their data have been compromised and that those keys are no longer used for encryption.\n\nThese compromised keys should be notated in the organization\u2019s \u201cCompromised Key Lists (CKLs)\u201d along with a summary of users notified, notification timeframes, or reasons that notifications were not made to compromised key users.\n\nCompromised keys await an investigation to determine disposition.\na. Perform emergency revocation when keys are lost or compromised.\nb. A compromised status must be available to all who have relied on the key.\nc. Use CKLs to inform stakeholders.\nd. Compromised status is also reflected in the inventory management system.\ne. Use audits to uncover undetected compromised keys.\nf. Analyze events to support recovery from compromises.\ng. Detail the method for revoking and re-keying compromised keys.\nh. Use cryptoperiods to limit compromised key damage.\ni. A compromised key should only be used to process data it has protected for the sole purpose of de-encrypting the data.\nj. All transitions/activity shall be recorded (logged) and the key state updated in the inventory management system (CKMS).",
+            "aws_tcbs": [
+                "AWS-KMS-010"
+            ],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [
+                "AZ-SCB-27"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "CEK-21": {
+            "title": "Key Inventory Management",
+            "control_specification": "Define, implement and evaluate processes, procedures and technical measures in order for the key management system to track and report all cryptographic materials and changes in status, which include provisions for legal and regulatory requirements.",
+            "implementation_guidelines": "Cryptographic Key Management Systems (CKMS), whether manual or automated, exist to process, control, store and report key management activity. \nThe CKMS should:\na. Capture, track and label all changes in status.\nb. Continuously monitor for unknown cryptographic assets.\nc. Generate and distribute key information.\nd. Acquire or generate public-key certificates.\ne.Backup archive and inventory key information.\nf. Maintain a database that maps entities to an organization\u2019s certificate or key structure.\ng. Provide maintenance and distribution of revoked key or certificate reports.\nh. Generate audit requests and process audit responses.\ni. Crypto materials include keys, certificates, and HSMs.\nj.Key management technology and processes should be NIST FIPS validated and NSA-approved.\nk. Cryptographic key management system security policies should protect the confidentiality, integrity, availability, and source authentication of all keys, certificates, algorithms, and metadata.\nl. All relevant transitions/activity should be recorded (logged) in the inventory management system (CKMS).",
+            "aws_tcbs": [
+                "AWS-ACM-001",
+                "AWS-ACM-003",
+                "AWS-ACM-005",
+                "AWS-EC2-040"
+            ],
+            "aws_scbs": [
+                "AWS-SCB-06"
+            ],
+            "azure_tcbs": [],
+            "azure_scbs": [],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "aws_scbs": [],
+        "azure_scbs": [],
+        "m365_scbs": [],
+        "acronym": "CEK",
+        "header_color": "A0E5E2",
+        "k8s_scbs": []
+    },
+    "Datacenter Security": {
+        "DCS-05": {
+            "title": "Assets Classification",
+            "control_specification": "Classify and document the physical, and logical assets (e.g., applications) based on the organizational business risk.",
+            "implementation_guidelines": "The facility management should develop a naming convention for asset classification that meets legal, value, and business requirements to protect restricted information sharing.",
+            "aws_tcbs": [],
+            "aws_scbs": [
+                "AWS-SCB-21"
+            ],
+            "azure_tcbs": [
+                "AZ-VM-004"
+            ],
+            "azure_scbs": [
+                "AZ-SCB-41",
+                "AZ-SCB-42"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": [
+                "K8S-SCB-10"
+            ]
+        },
+        "aws_scbs": [],
+        "azure_scbs": [],
+        "m365_scbs": [],
+        "acronym": "DCS",
+        "header_color": "2CBAEF",
+        "k8s_scbs": []
+    },
+    "Data Security and Privacy Lifecycle Management": {
+        "DSP-01": {
+            "title": "Security and Privacy Policy and Procedures",
+            "control_specification": "Establish, document, approve, communicate, apply, evaluate and maintain policies and procedures for the classification, protection and handling of data throughout its lifecycle, and according to all applicable laws and regulations, standards, and risk level. Review and update the policies and procedures at least annually.",
+            "implementation_guidelines": "Policies and procedures should include provisions for the following:\na. Data classifications with clear definitions and examples.\nb. Acceptable use, handling, and storage of data by classifications.\nc. How long the classified data should be retained.\nd. How/when the classified data should be destroyed.\ne. Responsibilities of data stewards.\n\nMaintain a data inventory and document data flow diagrams and associated technical measures.\n\nDocument data protection controls and third-party data sharing practices. This documentation and associated risks should be shared with customers and data owners as needed.\n\nExamples include but are not limited to:\n\u2022 Access controls and data loss prevention (DLP) solutions with data tagging capabilities.\n\u2022 Define testing intervals based on data classification types or levels.\n\u2022 Executive leadership should approve policies (cf. GRC-01).\n\u2022 Note: Data life cycles include all stages (processing, storage, and transmission).",
+            "aws_tcbs": [],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [],
+            "m365_tcbs": [
+                "M365-DM-001",
+                "M365-DM-002",
+                "M365-DM-008"
+            ],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "DSP-04": {
+            "title": "Data Classification",
+            "control_specification": "Classify data according to its type and sensitivity level.",
+            "implementation_guidelines": "Implement data classification by defining organizational data categories, such as public data, confidential data, etc. Automated tools to label files, per their sensitivity levels, may be used. Appropriate security measures/protection should be implemented, per its categorization.\n\nUse data classification, tagging, or metadata fields based on industry-standard frameworks such as (but not limited to):\na. Carnegie Mellon University: Guidelines for Data Classification\nb. SANS Institute: Tagging Data to Prevent Data Leakage (Forming Content Repositories)",
+            "aws_tcbs": [
+                "AWS-MACI-001"
+            ],
+            "aws_scbs": [
+                "AWS-SCB-05"
+            ],
+            "azure_tcbs": [
+                "AZ-POL-011"
+            ],
+            "azure_scbs": [],
+            "m365_tcbs": [
+                "M365-ENC-001"
+            ],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "DSP-07": {
+            "title": "Data Protection by Design and Default",
+            "control_specification": "Develop systems, products, and business practices based upon a principle of security by design and industry best practices.",
+            "implementation_guidelines": "Data protection and privacy consideration must be included by default at the design stage and throughout the product development lifecycle. In addition, design documentation should clearly describe how data is protected.",
+            "aws_tcbs": [
+                "AWS-SES-001"
+            ],
+            "aws_scbs": [],
+            "azure_tcbs": [
+                "AZ-IAM-005",
+                "AZ-POL-009",
+                "AZ-ST-008"
+            ],
+            "azure_scbs": [
+                "AZ-SCB-09",
+                "AZ-SCB-11"
+            ],
+            "m365_tcbs": [
+                "M365-ESEO-007",
+                "M365-ESEO-008",
+                "M365-ESEO-009"
+            ],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "DSP-08": {
+            "title": "Data Privacy by Design and Default",
+            "control_specification": "Develop systems, products, and business practices based upon a principle of privacy by design and industry best practices. Ensure that systems' privacy settings are configured by default, according to all applicable laws and regulations.",
+            "implementation_guidelines": "In line with privacy considerations by design and default principles, the default/out-of-the-box settings should align with the applicable regional privacy regulations.",
+            "aws_tcbs": [
+                "AWS-CLFT-001"
+            ],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [
+                "AZ-SCB-59"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "DSP-15": {
+            "title": "Limitation of Production Data Use",
+            "control_specification": "Obtain authorization from data owners, and manage associated risk before replicating or using production data in non-production environments.",
+            "implementation_guidelines": "Before replicating data or using data in non-production systems copied from the production system, perform a risk analysis and obtain data owner approval. Then, implement privacy risk mitigating techniques such as anonymization, pseudonymization, etc. (if required).",
+            "aws_tcbs": [],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [
+                "AZ-SCB-43"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "DSP-16": {
+            "title": "Data Retention and Deletion",
+            "control_specification": "Data retention, archiving and deletion is managed in accordance with business requirements, applicable laws and regulations.",
+            "implementation_guidelines": "Organizational data retention and deletion practices encompassing both physical and electronic data should be established and implemented.",
+            "aws_tcbs": [
+                "AWS-CLWT-005",
+                "AWS-S3-024",
+                "AWS-S3-025"
+            ],
+            "aws_scbs": [
+                "AWS-SCB-23"
+            ],
+            "azure_tcbs": [],
+            "azure_scbs": [
+                "AZ-SCB-17"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": [
+                "K8S-SCB-17"
+            ]
+        },
+        "DSP-17": {
+            "title": "Sensitive Data Protection",
+            "control_specification": "Define and implement, processes, procedures and technical measures to protect sensitive data throughout it's lifecycle.",
+            "implementation_guidelines": "Information rights management technology should be used and applied (when applicable) to all sensitive data. This technology can add a security layer that will help protect files from unauthorized copying, viewing, printing, forwarding, deleting, and editing.",
+            "aws_tcbs": [
+                "AWS-CLWT-003",
+                "AWS-CLWT-004",
+                "AWS-EC2-008",
+                "AWS-ECR-002",
+                "AWS-ECR-003",
+                "AWS-ELSE-004",
+                "AWS-LAMB-002",
+                "AWS-LAMB-003",
+                "AWS-MACI-002",
+                "AWS-RDS-001",
+                "AWS-S3-001",
+                "AWS-S3-002",
+                "AWS-S3-003",
+                "AWS-S3-004",
+                "AWS-S3-005",
+                "AWS-S3-006",
+                "AWS-S3-007",
+                "AWS-S3-011",
+                "AWS-S3-012",
+                "AWS-S3-013",
+                "AWS-S3-014",
+                "AWS-S3-015",
+                "AWS-S3-016",
+                "AWS-S3-018",
+                "AWS-S3-019",
+                "AWS-SES-002",
+                "AWS-SNS-003",
+                "AWS-SQS-003"
+            ],
+            "aws_scbs": [],
+            "azure_tcbs": [
+                "AZ-AAD-007",
+                "AZ-AAD-014",
+                "AZ-CNS-008",
+                "AZ-CNS-009",
+                "AZ-CNS-010",
+                "AZ-KV-001",
+                "AZ-KV-003",
+                "AZ-LM-008",
+                "AZ-LM-009",
+                "AZ-LM-010",
+                "AZ-LM-011",
+                "AZ-LM-012",
+                "AZ-LM-013",
+                "AZ-LM-014",
+                "AZ-LM-015",
+                "AZ-LM-016",
+                "AZ-LM-017",
+                "AZ-MLW-004"
+            ],
+            "azure_scbs": [
+                "AZ-SCB-16",
+                "AZ-SCB-19"
+            ],
+            "m365_tcbs": [
+                "M365-AAD-007",
+                "M365-AAD-014",
+                "M365-DM-004",
+                "M365-DM-005"
+            ],
+            "m365_scbs": [],
+            "k8s_tcbs": [
+                "K8S-CM-004",
+                "K8S-SCHED-002"
+            ],
+            "k8s_scbs": []
+        },
+        "DSP-19": {
+            "title": "Data Location",
+            "control_specification": "Define and implement, processes, procedures and technical measures to specify and document the physical locations of data, including any locations in which data is processed or backed up.",
+            "implementation_guidelines": "The CSP should track where data is stored, processed, and backed up to ensure it is in line with the laws and regulations applicable to the CSP and ensure those locations are not prohibited. In addition, the physical locations\u2019 registry should be kept up to date and shareable with CSC (if requested).",
+            "aws_tcbs": [],
+            "aws_scbs": [],
+            "azure_tcbs": [
+                "AZ-POL-002",
+                "AZ-POL-003"
+            ],
+            "azure_scbs": [],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "aws_scbs": [],
+        "azure_scbs": [],
+        "m365_scbs": [],
+        "acronym": "DSP",
+        "header_color": "FF9999",
+        "k8s_scbs": []
+    },
+    "Governance, Risk and Compliance": {
+        "GRC-05": {
+            "title": "Information Security Program",
+            "control_specification": "Develop and implement an Information Security Program, which includes programs for all the relevant domains of the CCM.",
+            "implementation_guidelines": "The program should identify and assign roles, responsibilities, and management commitment.\n\nThe CCM domains to address within the information security governance program include, but are not limited to:\na. Audit and assurance\nb. Application and interface security\nc. Business continuity management and operational resilience\nd. Change control and configuration management\ne. Cryptography, encryption, and key management\nf. Datacenter security\ng. Data security and privacy lifecycle management\nh. Governance, risk management, and compliance\ni. Human resources\nj. Identity and access management\nk. Interoperability and portability\nl. Infrastructure and virtualization security\nm. Logging and monitoring\nn. Security incident management, e-discovery, and cloud forensics\no. Supply chain management, transparency, and accountability\np. Threat and vulnerability management\nq. Universal endpoint management\n\nManagement should promote coordination among organizational entities responsible for the different aspects of cloud security and privacy risks. Review the program as required to address threat landscape changes and substantial organization changes.",
+            "aws_tcbs": [],
+            "aws_scbs": [
+                "AWS-SCB-09"
+            ],
+            "azure_tcbs": [],
+            "azure_scbs": [],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "GRC-08": {
+            "title": "Special Interest Groups",
+            "control_specification": "Establish and maintain contact with cloud-related special interest groups and other relevant entities in line with business context.",
+            "implementation_guidelines": "Management should establish and maintain contact with special interest groups or professional associations to receive early warnings and advice regarding new threats, vulnerabilities, and regulatory updates.",
+            "aws_tcbs": [],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "aws_scbs": [],
+        "azure_scbs": [],
+        "m365_scbs": [],
+        "acronym": "GRC",
+        "header_color": "B8D0A8",
+        "k8s_scbs": []
+    },
+    "Human Resources": {
+        "HRS-11": {
+            "title": "Security Awareness Training",
+            "control_specification": "Establish, document, approve, communicate, apply, evaluate and maintain a security awareness training program for all employees of the organization and provide regular training updates.",
+            "implementation_guidelines": "Security awareness training should educate personnel about their responsibilities and the necessary means for securing corporate assets.\n\nSecurity awareness training should consider the roles and responsibilities of organizational members.\n\nTraining may include a test to measure personnel\u2019s understanding of the responsibilities and protections required to secure corporate assets. This evaluation may be used to improve training and verify that relevant knowledge transfer occurs. Additionally, a training attendance registry should be maintained.",
+            "aws_tcbs": [],
+            "aws_scbs": [],
+            "azure_tcbs": [
+                "AZ-AAD-004"
+            ],
+            "azure_scbs": [],
+            "m365_tcbs": [
+                "M365-AAD-004",
+                "M365-ESEO-011"
+            ],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "aws_scbs": [],
+        "azure_scbs": [],
+        "m365_scbs": [],
+        "acronym": "HRS",
+        "header_color": "8484FF",
+        "k8s_scbs": []
+    },
+    "Identity & Access Management": {
+        "IAM-01": {
+            "title": "Identity and Access Management Policy and Procedures",
+            "control_specification": "Establish, document, approve, communicate, implement, apply, evaluate and maintain policies and procedures for identity and access management. Review and update the policies and procedures at least annually.",
+            "implementation_guidelines": "Organizations should document access control policies for the registration, management, and removal of digital identities. Additionally, the guidelines should be communicated within the organization.\n\nThe policy should:\na. Include, but not be limited to, roles and responsibilities concerning creation, changes, and deletion of access controls (including a regular review of access).\nb. Conduct reviews regularly (at least annually).\n\nThe organization should leverage the identity and access management policy to establish a security baseline.",
+            "aws_tcbs": [
+                "AWS-IAM-024"
+            ],
+            "aws_scbs": [],
+            "azure_tcbs": [
+                "AZ-AAD-003"
+            ],
+            "azure_scbs": [
+                "AZ-SCB-02",
+                "AZ-SCB-03"
+            ],
+            "m365_tcbs": [
+                "M365-AAD-003"
+            ],
+            "m365_scbs": [
+                "M365-SCB-01",
+                "M365-SCB-02",
+                "M365-SCB-15"
+            ],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "IAM-02": {
+            "title": "Strong Password Policy and Procedures",
+            "control_specification": "Establish, document, approve, communicate, implement, apply, evaluate and maintain strong password policies and procedures. Review and update the policies and procedures at least annually.",
+            "implementation_guidelines": "Organizations should establish a clear policy on strong password usage for different technical areas. Organizations should also have a monitoring mechanism to evaluate the effectiveness of policy implementation.\n\nThe policy should be reviewed periodically (at least annually) based on business requirements. In addition, the policy should clearly describe its applicability and scope, and management should promote effective communication to ensure effective implementation within the organization.\n\nOrganizations should also have policies and procedures for all personnel (employees, vendors, or other third parties) who have access to organizational data. Additionally, control-testing strategies should be employed to test these policies and be maintained regularly.",
+            "aws_tcbs": [
+                "AWS-IAM-002",
+                "AWS-IAM-029",
+                "AWS-IAM-045"
+            ],
+            "aws_scbs": [
+                "AWS-SCB-16"
+            ],
+            "azure_tcbs": [
+                "AZ-AAD-005",
+                "AZ-AAD-019",
+                "AZ-IAM-015",
+                "AZ-IAM-016",
+                "AZ-IAM-017",
+                "AZ-IAM-018"
+            ],
+            "azure_scbs": [
+                "AZ-SCB-04"
+            ],
+            "m365_tcbs": [
+                "M365-AAD-005",
+                "M365-AAD-019",
+                "M365-MDM-002",
+                "M365-MDM-003",
+                "M365-MDM-006",
+                "M365-MDM-013"
+            ],
+            "m365_scbs": [
+                "M365-SCB-04"
+            ],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "IAM-04": {
+            "title": "Separation of Duties",
+            "control_specification": "Employ the separation of duties principle when implementing information system access.",
+            "implementation_guidelines": "Access control policy should provide instruction on separation of environment and separation of duties, and cover the following:\na. Maintain separation of duties between the production, testing, and development environments while limiting read/write access to all environments (such as production, development, and testing).\nb. Maintain separation of duties should and require multiple layers of approval (e.g., business approval, system owner approval) to ensure the integrity of access to different systems.",
+            "aws_tcbs": [],
+            "aws_scbs": [],
+            "azure_tcbs": [
+                "AZ-IAM-026"
+            ],
+            "azure_scbs": [],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "IAM-05": {
+            "title": "Least Privilege",
+            "control_specification": "Employ the least privilege principle when implementing information system access.",
+            "implementation_guidelines": "User and service account access should leverage access control methods, such as role-based access control (RBAC) and attribute-based access control (ABAC). In addition, conduct regular reviews of access processes (including auditing, when appropriate) to identify non-adherence to the principle of least privilege.\n\nRestrict privileged access and access to administrative accounts should be via the principle of least privilege and a need-to-know basis. Furthermore, access should be set to \u201cdeny all\u201c unless specifically allowed.",
+            "aws_tcbs": [
+                "AWS-EC2-002",
+                "AWS-ECS-007",
+                "AWS-ECS-008",
+                "AWS-ECS-009",
+                "AWS-ECS-010",
+                "AWS-EKS-010",
+                "AWS-ELSE-005",
+                "AWS-EVBR-001",
+                "AWS-IAM-001",
+                "AWS-IAM-004",
+                "AWS-IAM-015",
+                "AWS-IAM-016",
+                "AWS-IAM-019",
+                "AWS-IAM-026",
+                "AWS-IAM-027",
+                "AWS-IAM-039",
+                "AWS-IAM-040",
+                "AWS-IAM-052",
+                "AWS-IAM-053",
+                "AWS-IAM-057",
+                "AWS-IAM-061",
+                "AWS-IAM-063",
+                "AWS-IAM-064",
+                "AWS-IAM-065",
+                "AWS-LAMB-004",
+                "AWS-LAMB-007",
+                "AWS-SES-003",
+                "AWS-SGM-003",
+                "AWS-SNS-004",
+                "AWS-SNS-005",
+                "AWS-SNS-006",
+                "AWS-SQS-004"
+            ],
+            "aws_scbs": [
+                "AWS-SCB-13",
+                "AWS-SCB-14",
+                "AWS-SCB-15",
+                "AWS-SCB-37"
+            ],
+            "azure_tcbs": [
+                "AZ-APS-001",
+                "AZ-APS-004",
+                "AZ-APS-005",
+                "AZ-CAP-004",
+                "AZ-CAP-005",
+                "AZ-CNS-002",
+                "AZ-CNS-004",
+                "AZ-DS-002",
+                "AZ-EHB-005",
+                "AZ-IAM-027",
+                "AZ-IAM-028",
+                "AZ-IAM-029",
+                "AZ-IAM-031",
+                "AZ-IAM-032",
+                "AZ-KV-006",
+                "AZ-ST-007",
+                "AZ-ST-009",
+                "AZ-SVB-005"
+            ],
+            "azure_scbs": [
+                "AZ-SCB-29",
+                "AZ-SCB-31",
+                "AZ-SCB-33",
+                "AZ-SCB-34",
+                "AZ-SCB-62",
+                "AZ-SCB-67"
+            ],
+            "m365_tcbs": [
+                "M365-AP-002",
+                "M365-AP-008",
+                "M365-AP-009",
+                "M365-AP-011",
+                "M365-DM-006",
+                "M365-DM-007",
+                "M365-ST-001",
+                "M365-ST-002",
+                "M365-ST-004"
+            ],
+            "m365_scbs": [
+                "M365-SCB-03"
+            ],
+            "k8s_tcbs": [
+                "K8S-API-004",
+                "K8S-API-009",
+                "K8S-API-015",
+                "K8S-CM-001",
+                "K8S-NS-003",
+                "K8S-POD-002",
+                "K8S-POD-004",
+                "K8S-POD-008",
+                "K8S-POD-013",
+                "K8S-POD-016",
+                "K8S-POD-017",
+                "K8S-POD-030",
+                "K8S-RBAC-001",
+                "K8S-RBAC-002",
+                "K8S-RBAC-003",
+                "K8S-RBAC-004",
+                "K8S-RBAC-005",
+                "K8S-RBAC-007",
+                "K8S-RBAC-008",
+                "K8S-RBAC-009",
+                "K8S-RBAC-010",
+                "K8S-RBAC-011"
+            ],
+            "k8s_scbs": [
+                "K8S-SCB-14",
+                "K8S-SCB-15"
+            ]
+        },
+        "IAM-07": {
+            "title": "User Access Changes and Revocation",
+            "control_specification": "De-provision or respectively modify access of movers / leavers or system identity changes in a timely manner in order to effectively adopt and communicate identity and access management policies.",
+            "implementation_guidelines": "Deprovisioning should automatically remove associated authorizations. For systems not integrated into automated processes, deprovisioning processes should be manually carried out by system owners. De-provisions to customer data should be made known to cloud customers where applicable.",
+            "aws_tcbs": [
+                "AWS-IAM-020",
+                "AWS-IAM-054"
+            ],
+            "aws_scbs": [],
+            "azure_tcbs": [
+                "AZ-AAD-010",
+                "AZ-AAD-013",
+                "AZ-AAD-021",
+                "AZ-AAD-024",
+                "AZ-IAM-011",
+                "AZ-IAM-012",
+                "AZ-IAM-014",
+                "AZ-IAM-020",
+                "AZ-IAM-021",
+                "AZ-IAM-033",
+                "AZ-KV-008",
+                "AZ-ST-004",
+                "AZ-ST-006"
+            ],
+            "azure_scbs": [],
+            "m365_tcbs": [
+                "M365-AAD-010",
+                "M365-AAD-013",
+                "M365-AAD-021",
+                "M365-AAD-024",
+                "M365-AP-006",
+                "M365-AU-014",
+                "M365-ST-003"
+            ],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "IAM-08": {
+            "title": "User Access Review",
+            "control_specification": "Review and revalidate user access for least privilege and separation of duties with a frequency that is commensurate with organizational risk tolerance.",
+            "implementation_guidelines": "The principle of separation of duties should also be considered when conducting user access reviews.\n\nAccess should be reviewed when users resign, are terminated, change roles, and/or no longer need the authorization to carry out duties for any other reason.",
+            "aws_tcbs": [
+                "AWS-IAM-023"
+            ],
+            "aws_scbs": [
+                "AWS-SCB-18"
+            ],
+            "azure_tcbs": [],
+            "azure_scbs": [
+                "AZ-SCB-36"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "IAM-09": {
+            "title": "Segregation of Privileged Access Roles",
+            "control_specification": "Define, implement and evaluate processes, procedures and technical measures for the segregation of privileged access roles such that administrative access to data, encryption and key management capabilities and logging capabilities are distinct and separated.",
+            "implementation_guidelines": "Processes and procedures should be communicated within the organization for adherence and enforcement and regularly reviewed (at least annually).\n\nSeparation of duties should be established and implemented between development/test and production environments. With this control, a developer may use an administrator-level account with elevated privileges in the development environment and a separate account with user-level access to the production environment. In addition, appropriate levels of logs should be gathered from the production systems for further monitoring and analysis via security operations.\n\nThese operations should be managed using split knowledge and dual control where key management operations are used.",
+            "aws_tcbs": [
+                "AWS-IAM-036",
+                "AWS-IAM-049",
+                "AWS-IAM-062"
+            ],
+            "aws_scbs": [],
+            "azure_tcbs": [
+                "AZ-AAD-020",
+                "AZ-IAM-022",
+                "AZ-IAM-025"
+            ],
+            "azure_scbs": [],
+            "m365_tcbs": [
+                "M365-AAD-020",
+                "M365-AP-007"
+            ],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "IAM-10": {
+            "title": "Management of Privileged Access Roles",
+            "control_specification": "Define and implement an access process to ensure privileged access roles and rights are granted for a time limited period, and implement procedures to prevent the culmination of segregated privileged access.",
+            "implementation_guidelines": "Administrators should be allowed to log in as themselves and elevate privilege by systematically requesting a new role assignment to obtain the rights they need to perform tasks. This can be accomplished by establishing temporary, time-bound privileged access for both on-premises and cloud-based infrastructure. The duration of approval validity should be automatically limited. Only authorized users/roles should be pre-approved to request elevation of privileged access.\n\nThe privileged access roles and rights should be reviewed periodically. Additionally, all the privilege access rights should be assigned based on multiple approval approaches (i.e., system owner, manager of user, etc.).\n\nll privileged accounts and elevation of privileges should be monitored for suspicious activity, such as login failures or attempts to escalate permissions using a security information and event management (SIEM) solution.",
+            "aws_tcbs": [],
+            "aws_scbs": [
+                "AWS-SCB-12",
+                "AWS-SCB-45"
+            ],
+            "azure_tcbs": [
+                "AZ-POL-004"
+            ],
+            "azure_scbs": [],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "IAM-12": {
+            "title": "Safeguard Logs Integrity",
+            "control_specification": "Define, implement and evaluate processes, procedures and technical measures to ensure the logging infrastructure is read-only for all with write access, including privileged access roles, and that the ability to disable it is controlled through a procedure that ensures the segregation of duties and break glass procedures.",
+            "implementation_guidelines": "The organization should consider the following for the control's implementation:\na. Logs should be stored in a centralized log management solution with separation of duties maintained by an independent team if possible.\nb. Logs should be integrated with a SIEM-type solution for real-time monitoring to raise alerts in case of any violation.",
+            "aws_tcbs": [],
+            "aws_scbs": [],
+            "azure_tcbs": [
+                "AZ-AAD-012",
+                "AZ-IAM-023",
+                "AZ-IAM-024",
+                "AZ-LM-003"
+            ],
+            "azure_scbs": [],
+            "m365_tcbs": [
+                "M365-AAD-012"
+            ],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "IAM-14": {
+            "title": "Strong Authentication",
+            "control_specification": "Define, implement and evaluate processes, procedures and technical measures for authenticating access to systems, application and data assets, including multifactor authentication for at least privileged user and sensitive data access. Adopt digital certificates or alternatives which achieve an equivalent level of security for system identities.",
+            "implementation_guidelines": "All individual, non-console administrative access and remote access to the systems and applications should be secured using multi-factor authentication. Multi-factor authentication should contain a minimum of two of the three authentication methods:\na. Something you know, such as a password or passphrase.\nb. Something you have, such as a token device or smart card or digital certification*.\nc. Something you are, such as a biometric.\n\n* Note: a digital certificate is a valid option for \u201csomething you have\u201d as long as it is unique for a particular user)",
+            "aws_tcbs": [
+                "AWS-DOCDB-007",
+                "AWS-ELSE-009",
+                "AWS-ELSE-012",
+                "AWS-IAM-022",
+                "AWS-IAM-033",
+                "AWS-IAM-037",
+                "AWS-NEP-001",
+                "AWS-RDS-007",
+                "AWS-RDS-014",
+                "AWS-RESH-004"
+            ],
+            "aws_scbs": [
+                "AWS-SCB-17"
+            ],
+            "azure_tcbs": [
+                "AZ-AAD-001",
+                "AZ-AAD-002",
+                "AZ-AAD-006",
+                "AZ-AAD-011",
+                "AZ-AAD-016",
+                "AZ-AAD-017",
+                "AZ-AAD-018",
+                "AZ-CNS-003",
+                "AZ-DS-004",
+                "AZ-DS-006",
+                "AZ-EHB-002",
+                "AZ-IAM-004",
+                "AZ-IAM-013",
+                "AZ-IAM-030",
+                "AZ-POL-001",
+                "AZ-POL-005",
+                "AZ-SVB-002"
+            ],
+            "azure_scbs": [],
+            "m365_tcbs": [
+                "M365-AAD-001",
+                "M365-AAD-002",
+                "M365-AAD-006",
+                "M365-AAD-011",
+                "M365-AAD-016",
+                "M365-AAD-017",
+                "M365-AAD-018"
+            ],
+            "m365_scbs": [],
+            "k8s_tcbs": [
+                "K8S-API-005",
+                "K8S-API-014"
+            ],
+            "k8s_scbs": []
+        },
+        "IAM-15": {
+            "title": "Passwords Management",
+            "control_specification": "Define, implement and evaluate processes, procedures and technical measures for the secure management of passwords.",
+            "implementation_guidelines": "The organization should adopt the following guidelines for the secure management of passwords:\n\u2022 Always change vendor-supplied defaults and remove or disable unnecessary default accounts before installing a network system.\n\u2022 \u0391ll non-console administrative access should be encrypted using strong cryptography.\n\u2022 Using strong cryptography, all authentication credentials (such as passwords or phrases) should be rendered unreadable during transmission and storage on all system components.\n\u2022 Verify user identity before modifying any authentication credential (i.e., performing password resets, provisioning new tokens, or generating new keys).\n\u2022 Passwords/passphrases should meet the criteria of industry best practices.\n\u2022 Alternatively, the password/passphrases should have complexity and strength at least equivalent to the parameters specified above.\n\u2022 Change user passwords/passphrases per the organization password standard.\n\u2022 Limit password reuse per the organization password standard.\n\u2022 Set passwords/passphrases for first-time use and upon reset to a unique value for each user and change immediately after the first use.\n\nDocument and communicate authentication policies and procedures to all users, including the following concepts:\na. Guidance on selecting strong authentication credentials.\nb. Guidance for how users should protect their authentication credentials.\nc. Generic user IDs are disabled or removed.\nd. Shared user IDs do not exist for system administration and other critical functions.\ne. Shared and generic user IDs are not used to administer any system components.\nGuidance on selecting strong passwords may include suggestions to help personnel select hard-to-guess passwords that don\u2019t contain:\nf. Dictionary words\ng. Information about the user (such as the user ID)\nh. Names of family members, date of birth, etc.\n\nGuidance for protecting authentication credentials may include not writing down passwords or saving them in insecure files and being alert for malicious individuals who may attempt to exploit their passwords (see NIST 800:53 password controls for details).",
+            "aws_tcbs": [
+                "AWS-ECS-004",
+                "AWS-IAM-009",
+                "AWS-LAMB-011",
+                "AWS-SEMA-002"
+            ],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [
+                "AZ-SCB-32"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [
+                "K8S-API-010",
+                "K8S-API-016",
+                "K8S-POD-012"
+            ],
+            "k8s_scbs": [
+                "K8S-SCB-13"
+            ]
+        },
+        "IAM-16": {
+            "title": "Authorization Mechanisms",
+            "control_specification": "Define, implement and evaluate processes, procedures and technical measures to verify access to data and system functions is authorized.",
+            "implementation_guidelines": "The information system should require approvals for authorizations to access the system resources and follow communicated and approved applicable policies.\n\nThe organization should adopt multiple authorization concepts (i.e., user manager, system/information owner).",
+            "aws_tcbs": [
+                "AWS-APIG-002",
+                "AWS-APIG-005",
+                "AWS-EC2-043",
+                "AWS-SES-004"
+            ],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [],
+            "m365_tcbs": [
+                "M365-DM-003"
+            ],
+            "m365_scbs": [],
+            "k8s_tcbs": [
+                "K8S-API-017"
+            ],
+            "k8s_scbs": []
+        },
+        "aws_scbs": [],
+        "azure_scbs": [],
+        "m365_scbs": [],
+        "acronym": "IAM",
+        "header_color": "BFBFBF",
+        "k8s_scbs": []
+    },
+    "Interoperability & Portability": {
+        "aws_scbs": [],
+        "azure_scbs": [],
+        "m365_scbs": [],
+        "acronym": "IPY",
+        "header_color": "E2F0DB",
+        "k8s_scbs": []
+    },
+    "Infrastructure & Virtualization Security": {
+        "IVS-01": {
+            "title": "Infrastructure and Virtualization Security Policy and Procedures",
+            "control_specification": "Establish, document, approve, communicate, apply, evaluate and maintain policies and procedures for infrastructure and virtualization security. Review and update the policies and procedures at least annually.",
+            "implementation_guidelines": "Infrastructure Virtualization Security Policy and Procedures should include, but are not limited to:\na. Governance and control VM lifecycle management.\nb. Storage restriction of VM images and snapshots.\nc. Backup and failover systems.\nd. Tagging for the VM based on sensitivity / risk level.\ne. A formal change management process for creation, storage, and use of VM images. Approve changes only when necessary.\nf. Consistent security policy and configuration across the physical/virtual network.\ng. Implementation of security technologies that span physical and virtual environments with a consistent policy management and enforcement framework.\nTo implement security technologies that span physical and virtual environments with a consistent policy management and enforcement framework.\nh. Firewalls, whether physical or virtual, to isolate groups of VMs from other hosted groups.\ni. Design and implementation access from each trust level to physical and virtual management and security systems.",
+            "aws_tcbs": [],
+            "aws_scbs": [
+                "AWS-SCB-22"
+            ],
+            "azure_tcbs": [],
+            "azure_scbs": [
+                "AZ-SCB-44",
+                "AZ-SCB-73"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": [
+                "K8S-SCB-01"
+            ]
+        },
+        "IVS-02": {
+            "title": "Capacity and Resource Planning",
+            "control_specification": "Plan and monitor the availability, quality, and adequate capacity of resources in order to deliver the required system performance as determined by the business.",
+            "implementation_guidelines": "Projections of future capacity requirements should be made regularly (at least annually\u2014with proactive actions taken\u2014to mitigate risks of system overload or downtime due to overwhelming demand or increased workloads.\n\nCloud service providers should maximize resource utilization and optimize resource allocation to ensure adequate performance is delivered in line with the promised capacity.\n\nCloud service consumers should specify performance and resource requirements in line with the business objectives.",
+            "aws_tcbs": [
+                "AWS-ECS-012"
+            ],
+            "aws_scbs": [
+                "AWS-SCB-44"
+            ],
+            "azure_tcbs": [],
+            "azure_scbs": [
+                "AZ-SCB-56",
+                "AZ-SCB-74"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [
+                "K8S-CM-005",
+                "K8S-POD-018",
+                "K8S-POD-021",
+                "K8S-POD-022",
+                "K8S-POD-024",
+                "K8S-POD-025",
+                "K8S-POD-026"
+            ],
+            "k8s_scbs": [
+                "K8S-SCB-07"
+            ]
+        },
+        "IVS-03": {
+            "title": "Network Security",
+            "control_specification": "Monitor, encrypt and restrict communications between environments to only authenticated and authorized connections, as justified by the business. Review these configurations at least annually, and support them by a documented justification of all allowed services, protocols, ports, and compensating controls.",
+            "implementation_guidelines": "Network communications justified by the business should be allowed, encrypted, and require authorization. Conversely, unjustified network communications should be disallowed.\n\nContainer application-aware network monitoring tools should be leveraged for:\na. Automated determination of proper container networking surfaces, including both inbound ports and process-port bindings.\nb. Detection of traffic flows between containers and other network entities over both wire traffic and encapsulated traffic.\nc. Detection of network anomalies\u2014such as unexpected traffic flows within the organization\u2019s network, port scanning, or outbound access to potentially dangerous destinations.\nd. Detection of invalid or unexpected malicious processes\u2014and data they introduce into the environment.",
+            "aws_tcbs": [
+                "AWS-APIG-003",
+                "AWS-CLFT-002",
+                "AWS-COBD-002",
+                "AWS-COBD-003",
+                "AWS-DMS-001",
+                "AWS-EC2-001",
+                "AWS-EC2-005",
+                "AWS-EC2-035",
+                "AWS-EC2-044",
+                "AWS-EC2-046",
+                "AWS-EKS-004",
+                "AWS-EKS-008",
+                "AWS-EKS-009",
+                "AWS-ELCA-001",
+                "AWS-ELCA-002",
+                "AWS-ELSE-003",
+                "AWS-ELSE-006",
+                "AWS-EMR-001",
+                "AWS-EMR-004",
+                "AWS-LAMB-008",
+                "AWS-RDS-015",
+                "AWS-RESH-005",
+                "AWS-RESH-008",
+                "AWS-RESH-009",
+                "AWS-SGM-001",
+                "AWS-SGM-002",
+                "AWS-SGM-004",
+                "AWS-SQS-005",
+                "AWS-WOSP-002"
+            ],
+            "aws_scbs": [
+                "AWS-SCB-33",
+                "AWS-SCB-35"
+            ],
+            "azure_tcbs": [
+                "AZ-APC-001",
+                "AZ-APS-002",
+                "AZ-APS-009",
+                "AZ-APS-010",
+                "AZ-APS-011",
+                "AZ-CAP-001",
+                "AZ-CAP-002",
+                "AZ-CAP-003",
+                "AZ-CAP-006",
+                "AZ-CNS-005",
+                "AZ-CNS-007",
+                "AZ-DBS-001",
+                "AZ-DBS-002",
+                "AZ-DBS-003",
+                "AZ-DBS-005",
+                "AZ-DS-012",
+                "AZ-DS-020",
+                "AZ-DS-021",
+                "AZ-DS-025",
+                "AZ-DS-026",
+                "AZ-DS-027",
+                "AZ-DS-028",
+                "AZ-DS-029",
+                "AZ-EHB-004",
+                "AZ-EHB-006",
+                "AZ-IAM-006",
+                "AZ-KV-007",
+                "AZ-LM-006",
+                "AZ-LM-007",
+                "AZ-MGF-001",
+                "AZ-MGF-003",
+                "AZ-MLW-001",
+                "AZ-MLW-002",
+                "AZ-NT-006",
+                "AZ-NT-007",
+                "AZ-POL-010",
+                "AZ-POL-012",
+                "AZ-POL-014",
+                "AZ-ST-001",
+                "AZ-ST-010",
+                "AZ-SVB-001",
+                "AZ-SVB-004"
+            ],
+            "azure_scbs": [
+                "AZ-SCB-20",
+                "AZ-SCB-21"
+            ],
+            "m365_tcbs": [
+                "M365-ESEO-003"
+            ],
+            "m365_scbs": [],
+            "k8s_tcbs": [
+                "K8S-API-007",
+                "K8S-API-011",
+                "K8S-API-012",
+                "K8S-CM-003",
+                "K8S-CM-006",
+                "K8S-CM-007",
+                "K8S-ETCD-003",
+                "K8S-ETCD-004",
+                "K8S-ETCD-005",
+                "K8S-ETCD-006",
+                "K8S-NS-001",
+                "K8S-NS-005",
+                "K8S-POD-019",
+                "K8S-SCHED-001"
+            ],
+            "k8s_scbs": [
+                "K8S-SCB-05"
+            ]
+        },
+        "IVS-04": {
+            "title": "OS Hardening and Base Controls",
+            "control_specification": "Harden host and guest OS, hypervisor or infrastructure control plane according to their respective best practices, and supported by technical controls, as part of a security baseline.",
+            "implementation_guidelines": "Supporting technical controls should aid situations when only the ports, protocols, and services necessary to meet business needs are provided. Such controls should be based on benchmarks (e.g., CIS).\n\nImplement anti-malware, file integrity monitoring, and logging, and utilize hardware rooted trust in virtual trusted platform modules (vTPMs).\n\nWhenever possible, organizations should use minimalistic, container-specific host operating systems (OSs), with all other services and functionality disabled\u2014and with read-only file systems and other hardening practices employed to reduce attack surfaces.\na. Hosts that run containers should only run containers and not other apps\u2014such as web servers or databases\u2014outside of containers.\nb. Hosts that run containers should be continuously scanned for vulnerabilities and updated promptly.\nc. The host OS should not run unnecessary system services.\nd. Access to the container host should be based on the need-to-know and least privilege principles.\ne. File integrity monitoring and host intrusion detection should be leveraged for containers.",
+            "aws_tcbs": [
+                "AWS-DMS-004",
+                "AWS-DOCDB-002",
+                "AWS-DOCDB-006",
+                "AWS-EBSK-004",
+                "AWS-EBSK-005",
+                "AWS-ECR-001",
+                "AWS-EKS-007",
+                "AWS-ELSE-013",
+                "AWS-LAMB-010",
+                "AWS-NEP-003",
+                "AWS-NEP-005",
+                "AWS-NEP-006",
+                "AWS-RDS-002",
+                "AWS-RDS-006",
+                "AWS-RDS-008",
+                "AWS-RDS-009",
+                "AWS-RDS-010",
+                "AWS-RDS-013",
+                "AWS-RESH-002",
+                "AWS-WACL-001"
+            ],
+            "aws_scbs": [],
+            "azure_tcbs": [
+                "AZ-APS-006",
+                "AZ-APS-007",
+                "AZ-APS-008",
+                "AZ-MSDC-022"
+            ],
+            "azure_scbs": [
+                "AZ-SCB-71"
+            ],
+            "m365_tcbs": [
+                "M365-MDM-001",
+                "M365-MDM-005"
+            ],
+            "m365_scbs": [],
+            "k8s_tcbs": [
+                "K8S-NS-004",
+                "K8S-POD-001",
+                "K8S-POD-005",
+                "K8S-POD-006",
+                "K8S-POD-007",
+                "K8S-POD-009",
+                "K8S-POD-010",
+                "K8S-POD-011",
+                "K8S-POD-014",
+                "K8S-POD-015",
+                "K8S-POD-028",
+                "K8S-SA-002"
+            ],
+            "k8s_scbs": []
+        },
+        "IVS-05": {
+            "title": "Production and Non-Production Environments",
+            "control_specification": "Separate production and non-production environments.",
+            "implementation_guidelines": "Separation of the environments may include:\n\u2022 Stateful inspection firewalls\n\u2022 Domain/realm authentication sources\n\u2022 Clear segregation of duties for personnel accessing these environments as part of their job duties\n\nApply sanitization routines on data before loading into non-production, and define environmental boundaries.\n\nProduction workloads should be isolated from the lower environments (e.g., development, testing) when possible.",
+            "aws_tcbs": [
+                "AWS-EC2-011",
+                "AWS-EC2-013",
+                "AWS-EC2-014",
+                "AWS-EC2-042",
+                "AWS-EKS-001"
+            ],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [
+                "K8S-POD-029"
+            ],
+            "k8s_scbs": []
+        },
+        "IVS-06": {
+            "title": "Segmentation and Segregation",
+            "control_specification": "Design, develop, deploy and configure applications and infrastructures such that CSP and CSC (tenant) user access and intra-tenant access is appropriately segmented and segregated, monitored and restricted from other tenants.",
+            "implementation_guidelines": "The following should be considered for control implementation:\na. Established policies, procedures, and best-practices\nb. Possible definitions of segmentation should range from 'total isolation' to 'partial logical separation of business-critical assets and/or personal data/sensitive user data, and sessions'.\nc. Compliance with legal, statutory, and regulatory compliance obligations in-scope for particular use-cases or scenarios\n\nWorkloads between tenants and business lines should be segmented per the least privilege concept to reduce the attack surface. In addition, workload tagging, resource names, and identification should be used for workloads.",
+            "aws_tcbs": [],
+            "aws_scbs": [
+                "AWS-SCB-11",
+                "AWS-SCB-19",
+                "AWS-SCB-30",
+                "AWS-SCB-38",
+                "AWS-SCB-46",
+                "AWS-SCB-47",
+                "AWS-SCB-48"
+            ],
+            "azure_tcbs": [
+                "AZ-NT-008",
+                "AZ-NT-012"
+            ],
+            "azure_scbs": [
+                "AZ-SCB-22",
+                "AZ-SCB-30",
+                "AZ-SCB-37",
+                "AZ-SCB-52",
+                "AZ-SCB-55",
+                "AZ-SCB-60",
+                "AZ-SCB-61",
+                "AZ-SCB-75"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [
+                "K8S-INGS-001",
+                "K8S-POD-003",
+                "K8S-POD-027",
+                "K8S-RBAC-006",
+                "K8S-SA-001",
+                "K8S-SEC-001",
+                "K8S-SVC-001"
+            ],
+            "k8s_scbs": [
+                "K8S-SCB-02",
+                "K8S-SCB-03",
+                "K8S-SCB-06"
+            ]
+        },
+        "IVS-08": {
+            "title": "Network Architecture Documentation",
+            "control_specification": "Identify and document high-risk environments.",
+            "implementation_guidelines": "The documents or diagrams should include, but are not limited to, the details below:\na. Architecture diagrams, security zone descriptions, and related policies\nb. All components (physical, logical)\nc. Hypervisors, workloads, hosts, and networks (physical, virtual), etc.\nd. Physical site details for each workload\ne. Traffic flow between various components\nf. All communication channels, including out-of-band communication channels\ng. Defined roles and responsibilities\nh. Security zones, workloads on each host, security levels for the workloads, etc.,\ni. Identify and document dependencies between the different environments and how they impact the risk assessment.",
+            "aws_tcbs": [],
+            "aws_scbs": [
+                "AWS-SCB-36"
+            ],
+            "azure_tcbs": [],
+            "azure_scbs": [
+                "AZ-SCB-08",
+                "AZ-SCB-58"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": [
+                "K8S-SCB-09"
+            ]
+        },
+        "IVS-09": {
+            "title": "Network Defense",
+            "control_specification": "Define, implement and evaluate processes, procedures and defense-in-depth techniques for protection, detection, and timely response to network-based attacks.",
+            "implementation_guidelines": "Vulnerabilities in a physical environment also apply in a virtual environment. Configuration flaws/vulnerabilities in the applications, firewalls, or networks will be vulnerable to exploits. Defense-in-depth techniques should be leveraged for both physical, logical, and administrative, etc., controls.\n\nDefense-in-depth techniques/insights that should be considered include:\na. Deep packet analysis, traffic throttling, and black-holing.\nb. Ingress/egress traffic patterns may include media access control (MAC) spoofing and ARP poisoning attacks and/or distributed denial-of-service (DDoS) attacks.\nc. Perimeter firewalls implemented and configured to restrict unauthorized traffic.\nd. Security settings enabled with strong encryption for authentication and transmission, replacing vendor default settings (e.g., encryption keys, passwords, and SNMP community strings).\ne. Develop capabilities to detect unauthorized (rogue) network devices in the network and disconnect quickly.",
+            "aws_tcbs": [
+                "AWS-SHIE-001",
+                "AWS-SHIE-003"
+            ],
+            "aws_scbs": [
+                "AWS-SCB-31",
+                "AWS-SCB-32"
+            ],
+            "azure_tcbs": [
+                "AZ-AAD-008",
+                "AZ-AAD-009"
+            ],
+            "azure_scbs": [
+                "AZ-SCB-53",
+                "AZ-SCB-54"
+            ],
+            "m365_tcbs": [
+                "M365-AAD-008",
+                "M365-AAD-009",
+                "M365-MDM-004"
+            ],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "aws_scbs": [],
+        "azure_scbs": [],
+        "m365_scbs": [],
+        "acronym": "IVS",
+        "header_color": "CEF2FB",
+        "k8s_scbs": []
+    },
+    "Logging and Monitoring": {
+        "LOG-01": {
+            "title": "Logging and Monitoring Policy and Procedures",
+            "control_specification": "Establish, document, approve, communicate, apply, evaluate and maintain policies and procedures for logging and monitoring. Review and update the policies and procedures at least annually.",
+            "implementation_guidelines": "The policies and procedures should include considerations regarding:\na. The purpose, scope, roles, responsibilities, and coordination among organizational entities and training.\nb. How are incidents handled during a security incident?\nc. What information should be logged and monitored, and for how long?\nd. Who is notified in the event of an incident?\n\nLogging and monitoring policies and procedures should capture the following events:\nc. Individual user accesses to systems.\nd. Actions taken by any individual with root or administrative privileges.\ne. Access to all audit logs should be restricted based on need-to-know and least privilege principles.\nf. Invalid access attempts.\ng. Changes, additions, or deletions to accounts with root or administrative privileges.\nh. Use of and changes to identification and authentication mechanisms, including elevation of privilege.\ni. Initializing, stopping, or pausing of the audit logs.\nj. Creation and deletion of system-level objects.",
+            "aws_tcbs": [],
+            "aws_scbs": [
+                "AWS-SCB-24"
+            ],
+            "azure_tcbs": [],
+            "azure_scbs": [
+                "AZ-SCB-48"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "LOG-02": {
+            "title": "Audit Logs Protection",
+            "control_specification": "Identify and monitor security-related events within applications and the underlying infrastructure. Define and implement a system to generate alerts to responsible stakeholders based on such events and corresponding metrics.",
+            "implementation_guidelines": "Implementation of application security monitoring should include the following components:\na. Generation of alerts from metrics indicating risks beyond established thresholds.\nb. Categorization of risks based on business impact analysis and prioritized monitoring of high-impact risks.\nc. Consideration of automation capabilities (when applicable) to streamline application security monitoring.\nd. Reporting and/or dashboard to provide real-time visibility to security and business stakeholders on application security statuses.\ne. Periodic review of monitoring capabilities and processes by a combined group of security, IT and, business stakeholders.",
+            "aws_tcbs": [
+                "AWS-CLTR-003",
+                "AWS-CLTR-005",
+                "AWS-CLTR-009",
+                "AWS-CLTR-014"
+            ],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "LOG-03": {
+            "title": "Security Monitoring and Alerting",
+            "control_specification": "Identify and monitor security-related events within applications and the underlying infrastructure. Define and implement a system to generate alerts to responsible stakeholders based on such events and corresponding metrics.",
+            "implementation_guidelines": "Implementation of application security monitoring should include the following components:\na. Generation of alerts from metrics indicating risks beyond established thresholds.\nb. Categorization of risks based on business impact analysis and prioritized monitoring of high-impact risks.\nc. Consideration of automation capabilities (when applicable) to streamline application security monitoring.\nd. Reporting and/or dashboard to provide real-time visibility to security and business stakeholders on application security statuses.\ne. Periodic review of monitoring capabilities and processes by a combined group of security, IT and, business stakeholders.",
+            "aws_tcbs": [
+                "AWS-ATHE-003",
+                "AWS-CLTR-008",
+                "AWS-CLWT-001",
+                "AWS-LAMB-005"
+            ],
+            "aws_scbs": [
+                "AWS-SCB-08",
+                "AWS-SCB-26",
+                "AWS-SCB-27",
+                "AWS-SCB-28",
+                "AWS-SCB-29"
+            ],
+            "azure_tcbs": [
+                "AZ-DS-001",
+                "AZ-LM-002",
+                "AZ-LM-005",
+                "AZ-LM-021",
+                "AZ-NT-014",
+                "AZ-ST-005",
+                "AZ-ST-013",
+                "AZ-ST-014"
+            ],
+            "azure_scbs": [
+                "AZ-SCB-28",
+                "AZ-SCB-50",
+                "AZ-SCB-51"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": [
+                "K8S-SCB-18"
+            ]
+        },
+        "LOG-05": {
+            "title": "Audit Logs Monitoring and Response",
+            "control_specification": "Monitor security audit logs to detect activity outside of typical or expected patterns. Establish and follow a defined process to review and take appropriate and timely actions on detected anomalies.",
+            "implementation_guidelines": "Failure response capabilities should be in place. Also, consider infrastructure layers (e.g., network, container orchestration, hypervisor, endpoint, control plane, and data plane).\n\nMonitor failures and alerts should they occur.",
+            "aws_tcbs": [
+                "AWS-GUDU-002",
+                "AWS-GUDU-003"
+            ],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [],
+            "m365_tcbs": [],
+            "m365_scbs": [
+                "M365-SCB-05",
+                "M365-SCB-06",
+                "M365-SCB-07",
+                "M365-SCB-08",
+                "M365-SCB-09",
+                "M365-SCB-10",
+                "M365-SCB-11",
+                "M365-SCB-12",
+                "M365-SCB-13",
+                "M365-SCB-14"
+            ],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "LOG-08": {
+            "title": "Log Records",
+            "control_specification": "Generate audit records containing relevant security information.",
+            "implementation_guidelines": "Relevant security log information should include but is not limited to:\n\u2022 The event type\n\u2022 The event time\n\u2022 The event location\n\u2022 The event source\n\u2022 The event outcome\n\u2022 The identities of any individuals or systems associated with the event",
+            "aws_tcbs": [
+                "AWS-APIG-006",
+                "AWS-CLFT-006",
+                "AWS-CLTR-001",
+                "AWS-CLTR-006",
+                "AWS-CLTR-007",
+                "AWS-COBD-004",
+                "AWS-DOCDB-003",
+                "AWS-EBSK-001",
+                "AWS-EBSK-002",
+                "AWS-EBSK-003",
+                "AWS-EC2-047",
+                "AWS-ECS-003",
+                "AWS-EKS-002",
+                "AWS-ELSE-008",
+                "AWS-EMR-005",
+                "AWS-LAMB-009",
+                "AWS-NEP-004",
+                "AWS-RDS-004",
+                "AWS-RESH-001",
+                "AWS-RESH-003",
+                "AWS-S3-023"
+            ],
+            "aws_scbs": [
+                "AWS-SCB-02"
+            ],
+            "azure_tcbs": [
+                "AZ-CDN-002",
+                "AZ-DS-013",
+                "AZ-DS-014",
+                "AZ-DS-015",
+                "AZ-DS-016",
+                "AZ-DS-017",
+                "AZ-DS-022",
+                "AZ-DS-023",
+                "AZ-EHB-008",
+                "AZ-MGF-004",
+                "AZ-MLW-005"
+            ],
+            "azure_scbs": [],
+            "m365_tcbs": [
+                "M365-AU-001",
+                "M365-AU-002"
+            ],
+            "m365_scbs": [],
+            "k8s_tcbs": [
+                "K8S-API-003"
+            ],
+            "k8s_scbs": [
+                "K8S-SCB-11"
+            ]
+        },
+        "LOG-09": {
+            "title": "Log Protection",
+            "control_specification": "The information system protects audit records from unauthorized access, modification, and deletion.",
+            "implementation_guidelines": "Access to audit records should be granted based on a least-privilege basis and only to authorized individuals. Changes to logs, including deletions, should be tracked and approved by authorized individuals. Logs should be backed up per organizational policies.",
+            "aws_tcbs": [],
+            "aws_scbs": [
+                "AWS-SCB-03"
+            ],
+            "azure_tcbs": [],
+            "azure_scbs": [
+                "AZ-SCB-46",
+                "AZ-SCB-47"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "LOG-11": {
+            "title": "Transaction/Activity Logging",
+            "control_specification": "Log and monitor key lifecycle management events to enable auditing and reporting on usage of cryptographic keys.",
+            "implementation_guidelines": "Logging of key lifecycle events should include but are not limited to the following events: key generation, key usage, key storage (including backup), and archiving and key deletion. In addition, only authorized personnel should have access to key materials, and all access attempts should be logged and reviewed.\n\nDocument and implement all key-management processes and procedures for cryptographic keys, including:\na. Generation of strong cryptographic keys\nb. Secure cryptographic key distribution\nc. Secure cryptographic key storage\nd. Key revocation after expiry\ne. Split knowledge and dual control as needed for manual key management operations\nf. Prevention of unauthorized substitution of cryptographic keys",
+            "aws_tcbs": [
+                "AWS-CLTR-010"
+            ],
+            "aws_scbs": [
+                "AWS-SCB-25"
+            ],
+            "azure_tcbs": [],
+            "azure_scbs": [
+                "AZ-SCB-25"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "LOG-13": {
+            "title": "Failures and Anomalies Reporting",
+            "control_specification": "Define, implement and evaluate processes, procedures and technical measures for the reporting of anomalies and failures of the monitoring system and provide immediate notification to the accountable party.",
+            "implementation_guidelines": "The organization should define which actions are taken depending on the type of logging and monitoring failure. Anomalies can include software errors, failures to capture some or all logs, failure to backup audit logs, or storage exceeded notifications. This guidance should apply to all information system logs.\n\nOrganizations must implement a process for the timely detection and reporting of failures of critical security control systems, such as (but limited to):\na. Firewalls\nb. Intrusion detection systems (IDS)/intrusion prevention systems (IPS)\nc. File integrity monitoring (FIM)\nd. Anti-virus\ne. Physical access controls\nf. Logical access controls\ng. Audit logging mechanisms",
+            "aws_tcbs": [
+                "AWS-CLTR-004",
+                "AWS-CLTR-012",
+                "AWS-CLTR-013"
+            ],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "aws_scbs": [],
+        "azure_scbs": [],
+        "m365_scbs": [],
+        "acronym": "LOG",
+        "header_color": "D7E0F1",
+        "k8s_scbs": []
+    },
+    "Security Incident Management, E-Discovery, & Cloud Forensics": {
+        "SEF-03": {
+            "title": "Incident Response Plans",
+            "control_specification": "Establish, document, approve, communicate, apply, evaluate and maintain a security incident response plan, which includes but is not limited to: relevant internal departments, impacted CSCs, and other business critical relationships(such as supply-chain) that may be impacted.",
+            "implementation_guidelines": "Incident response plans should provide a roadmap for handling incidents involving the organization\u2019s cloud services and the products and services upon which those services rely. These plans should apply whether those dependencies are internal (such as IT, operations, support, and legal) or external (suppliers, vendors, partners, customers, and other third parties).",
+            "aws_tcbs": [
+                "AWS-SHIE-002"
+            ],
+            "aws_scbs": [
+                "AWS-SCB-20"
+            ],
+            "azure_tcbs": [
+                "AZ-MSDC-016",
+                "AZ-MSDC-017",
+                "AZ-MSDC-018"
+            ],
+            "azure_scbs": [
+                "AZ-SCB-38",
+                "AZ-SCB-39"
+            ],
+            "m365_tcbs": [
+                "M365-ESEO-002",
+                "M365-ESEO-010"
+            ],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": [
+                "K8S-SCB-16"
+            ]
+        },
+        "SEF-05": {
+            "title": "Incident Response Metrics",
+            "control_specification": "Establish and monitor information security incident metrics.",
+            "implementation_guidelines": "Organizations should define, implement and monitor metrics associated with events and incidents to detect any weaknesses in the operational processes or technical controls which support effective incident management. Metrics may quantify:\na. Volume of events and ratio of events to incidents.\nb. Incidents by type, product, department, severity, etc.\nc. Timeliness of procedural execution for identification, investigation, and resolution.\nd. Variances from documented procedures.",
+            "aws_tcbs": [],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [
+                "AZ-SCB-49"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "SEF-06": {
+            "title": "Event Triage Processes",
+            "control_specification": "Define, implement and evaluate processes, procedures and technical measures supporting business processes to triage security-related events.",
+            "implementation_guidelines": "Processes, procedures, and technical measures should be defined and implemented to support the investigation and evaluation of security-related events that allow the organization to prioritize events by severity and impact. The objective for these measures is to prioritize the timely analysis of event information and rapid engagement of the incident response process.\n\nMethodologies\u2014including processes, tools, or machine learning algorithms used in incident handling\u2014should periodically be reviewed for efficacy and accuracy in the current operating environment.",
+            "aws_tcbs": [],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [
+                "AZ-SCB-40"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "aws_scbs": [],
+        "azure_scbs": [],
+        "m365_scbs": [],
+        "acronym": "SEF",
+        "header_color": "FDF188",
+        "k8s_scbs": []
+    },
+    "Supply Chain Management, Transparency, and Accountability": {
+        "STA-08": {
+            "title": "Supply Chain Risk Management",
+            "control_specification": "CSPs periodically review risk factors associated with all organizations within their supply chain.",
+            "implementation_guidelines": "Both the CSP and CSC should follow applicable local and international third-party risk management (TPRM) best practices in managing supply chain risks, including periodic reviews of organizational and technical risk factors, contract requirements, environmental changes, and security incident response capabilities for all supply chain organizations. There may also be applicable regulatory requirements and standards to consider.",
+            "aws_tcbs": [],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [
+                "AZ-SCB-66"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "aws_scbs": [],
+        "azure_scbs": [],
+        "m365_scbs": [],
+        "acronym": "STA",
+        "header_color": "E3D9B4",
+        "k8s_scbs": []
+    },
+    "Threat & Vulnerability Management": {
+        "TVM-02": {
+            "title": "Malware Protection Policy and Procedures",
+            "control_specification": "Establish, document, approve, communicate, apply, evaluate and maintain policies and procedures to protect against malware on managed assets. Review and update the policies and procedures at least annually.",
+            "implementation_guidelines": "Malware protection policies should focus on inspecting both inbound and outbound traffic and implementing controls to detect, prevent, block, and remove malware. Include expectations of time objectives for remediation programs that seek to ensure systems are free of infection when they connect to enterprise computing resources. Malware protection should be integrated across all computing infrastructure, including compute, network, endpoints, and secure access gateways.\n\nOrganizations should centrally manage malware protection mechanisms, including planning, implementing, assessing, authorizing, and monitoring organizational-defined malware protection security controls. This process will help to cohesively address malware within predefined timeframes.\n\nThreat and vulnerability management policy should include the ability to address malware as a specific threat element. This should provide the organization with a guideline to handle malware using appropriate tools, relevant automation, and operational frameworks to meet their risk tolerance.\n\nIf malware is identified by antivirus or anti-malware applications using a signature- or behavior-based detection process, malware removal should be updated according to applicable contractual agreements and organizational standards. Additionally, prevention software and associated signatures should be deployed centrally by the service provider throughout their environment.",
+            "aws_tcbs": [],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [],
+            "m365_tcbs": [
+                "M365-AP-010"
+            ],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "TVM-03": {
+            "title": "Vulnerability Remediation Schedule",
+            "control_specification": "Define, implement and evaluate processes, procedures and technical measures to enable both scheduled and emergency responses to vulnerability identifications, based on the identified risk.",
+            "implementation_guidelines": "An integrated TVM  system should be implemented that can maintain records of threats and vulnerabilities found over time and the result of their mitigation actions. The Integrated TVM system should be used to mitigate all future risks, by leveraging the previous experiences of the mitigation activities.\n\nA full remediation schedule should be considered. The schedule should classify and prioritize vulnerabilities in order of their severity and threat to the environment, aligned to the expectations of TVM Policy.\n\nVulnerability remediation schedules should be approved and communicated to all relevant stakeholders (and included in SLA's).",
+            "aws_tcbs": [
+                "AWS-INSP-003"
+            ],
+            "aws_scbs": [
+                "AWS-SCB-42"
+            ],
+            "azure_tcbs": [],
+            "azure_scbs": [
+                "AZ-SCB-69"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": [
+                "K8S-SCB-08"
+            ]
+        },
+        "TVM-04": {
+            "title": "External Library Vulnerabilities",
+            "control_specification": "Define, implement and evaluate processes, procedures and technical measures to identify updates for applications which use third party or open source libraries according to the organization's vulnerability management policy.",
+            "implementation_guidelines": "Where a CSC or a CSP uses third party or open source libraries, these should be tracked, scanned and reported on in the integrated TVM system. Installed or used packages, libraries and/or runtimes that are part of their solution with their running version should be included. TVM scans can be performed automatically and the findings should be promptly reported to the integrated TVM system. This activity should be monitored to avoid operational gaps.\n\nThe organization should leverage global threat intelligence about threat signatures and vulnerability databases that may contain indicators of attack and compromise. It should also consider implementing automated & recurring processes so that human errors can be avoided.",
+            "aws_tcbs": [],
+            "aws_scbs": [],
+            "azure_tcbs": [
+                "AZ-MSDC-021",
+                "AZ-VM-005"
+            ],
+            "azure_scbs": [],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "TVM-06": {
+            "title": "Penetration Testing",
+            "control_specification": "Define, implement and evaluate processes, procedures and technical measures for the periodic performance of penetration testing by independent third parties.",
+            "implementation_guidelines": "A formal schedule of red team exercises interspersed with risk assessments, remediation, and penetration testing aligned to the applicable service model (I-P-SaaS, and XaaS) should be established. Penetration testing should comply with all applicable laws and regulations.\n\nA written and signed authorization should be obtained and verified before and after services are rendered. Penetration test schedules should be published on the integrated TVM system to ensure tactics, techniques, and test procedures adhere to documented policies.",
+            "aws_tcbs": [],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [
+                "AZ-SCB-70"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "TVM-07": {
+            "title": "Vulnerability Identification",
+            "control_specification": "Define, implement and evaluate processes, procedures and technical measures for the detection of vulnerabilities on organizationally managed assets at least monthly.",
+            "implementation_guidelines": "The integrated TVM system should track vulnerabilities to closure and report them to build oversight of residual risks. Furthermore, the system should retain information that can be reused in future remediation activities.\n\nOrganizations should consider establishing an external-facing vulnerability disclosure program to allow external parties to communicate detected vulnerabilities.",
+            "aws_tcbs": [
+                "AWS-INSP-001",
+                "AWS-INSP-004"
+            ],
+            "aws_scbs": [
+                "AWS-SCB-40",
+                "AWS-SCB-41"
+            ],
+            "azure_tcbs": [
+                "AZ-CNS-006",
+                "AZ-DS-007",
+                "AZ-DS-008",
+                "AZ-DS-009",
+                "AZ-DS-010",
+                "AZ-DS-011",
+                "AZ-MSDC-001",
+                "AZ-MSDC-002",
+                "AZ-MSDC-003",
+                "AZ-MSDC-004",
+                "AZ-MSDC-005",
+                "AZ-MSDC-006",
+                "AZ-MSDC-007",
+                "AZ-MSDC-008",
+                "AZ-MSDC-009",
+                "AZ-MSDC-010",
+                "AZ-MSDC-011",
+                "AZ-MSDC-012",
+                "AZ-MSDC-013",
+                "AZ-MSDC-014",
+                "AZ-MSDC-015",
+                "AZ-MSDC-019",
+                "AZ-MSDC-020"
+            ],
+            "azure_scbs": [
+                "AZ-SCB-65",
+                "AZ-SCB-68"
+            ],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "aws_scbs": [],
+        "azure_scbs": [],
+        "m365_scbs": [],
+        "acronym": "TVM",
+        "header_color": "A0E5E2",
+        "k8s_scbs": []
+    },
+    "Universal Endpoint Management": {
+        "UEM-04": {
+            "title": "Endpoint Inventory",
+            "control_specification": "Maintain an inventory of all endpoints used to store and access company data.",
+            "implementation_guidelines": "All organizational endpoint systems should be identified and protected. In addition, a policy against the inventory should be established and documented (including scan type, number of scans, schedule, and exceptions/exclusions).\n\nAn inventory of all mobile devices used to store and access company data should be kept and maintained. Include all device status changes (i.e., operating system, patch levels, lost/decommissioned status, and to whom the device is assigned or approved for usage [BYOD]) in the inventory.\n\nA documented list of approved application stores should be defined as acceptable for mobile devices accessing or storing provider-managed data.",
+            "aws_tcbs": [
+                "AWS-CUR-001"
+            ],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "UEM-06": {
+            "title": "Automatic Lock Screen",
+            "control_specification": "Configure all relevant interactive-use endpoints to require an automatic lock screen.",
+            "implementation_guidelines": "The organization should implement this requirement through technical controls for all interactive-use endpoints.",
+            "aws_tcbs": [],
+            "aws_scbs": [],
+            "azure_tcbs": [
+                "AZ-AAD-015"
+            ],
+            "azure_scbs": [],
+            "m365_tcbs": [
+                "M365-AAD-015",
+                "M365-MDM-007"
+            ],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "UEM-08": {
+            "title": "Storage Encryption",
+            "control_specification": "Protect information from unauthorized disclosure on managed endpoint devices with storage encryption.",
+            "implementation_guidelines": "To minimize data leak risks and protect data stored on the endpoint device, use encryption. Encryption capabilities could be part of common endpoint solutions such as DLP, endpoint firewalls, and PAM. Additionally, they could be standalone (e.g., device container technology, file encryption, and full-disk encryption). The encryption strength should be based on the sensitivity of the data being protected.\n\nEndpoint device policies should use encryption for the entire device or data identified as sensitive on all mobile devices (potentially using container technology). This policy should be enforced through technology controls.",
+            "aws_tcbs": [],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [],
+            "m365_tcbs": [
+                "M365-MDM-008",
+                "M365-MDM-009",
+                "M365-MDM-010"
+            ],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "UEM-09": {
+            "title": "Anti-Malware Detection and Prevention",
+            "control_specification": "Configure managed endpoints with anti-malware detection and prevention technology and services.",
+            "implementation_guidelines": "Organizations should consider the following:\na. Managed endpoints should be protected through anti-malware software, security awareness, appropriate system access, and change management controls.\nb. Organizations should have formal policies and technologies implemented to install and upgrade protective measures promptly. These measures include installing and regularly updating anti-malware software and virus definitions (automatically) and whenever updates are available. Additionally, organizations should periodically review and scan installed software and system data content to identify and remove unauthorized software (when possible).\nc. Wherever possible, organizations should also:\n    1. Disable universal serial bus (USB) ports.\n    2. Prohibit writable media use (e.g., DVD-R).\n    3. Restrict read-only media (e.g., DVD-ROM) used to legitimate commercial sources for legitimate business reasons (e.g., Linux installation disks) and allow only whitelisted software to run on the endpoint.\nd. Employ anti-malware software that offers a centralized infrastructure that compiles information on file reputations or has administrators manually push updates to all machines. After updating, automated systems should verify that each system has received its signature update.\ne. Define procedures to respond to malicious code or unauthorized software identification. Checking antivirus or anti-spyware software generates audit logs of checks performed. Malicious code detection and repair software checks to scan computers and media include:\n    1. Checking files on electronic or optical media and files received over networks for malicious code before use.\n    2. Checking electronic mail attachments and downloads for malicious code or file types that are unnecessary for organizational business before use. This check occurs at different places (e.g., electronic mail servers, desktop computers, and when entering the organization`s network).\n    3. Checking web traffic\u2014such as hypertext markup language (HTML), JavaScript, and hypertext transfer protocol (HTTP)\u2014for malicious code.\n    4. Checking removable media (e.g., USB tokens and hard drives, CDs/DVDs, FireWire devices, and external serial advanced technology attachment devices) when inserted.\nf. Have formal policies to prohibit using or installing unauthorized software, including restricting on obtaining data and software from external networks. User awareness and training on these policies and methods should be provided for all users regularly.\ng. Bring your own device (BYOD) users should use anti-malware software (where supported).",
+            "aws_tcbs": [],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [],
+            "m365_tcbs": [
+                "M365-AP-003",
+                "M365-AP-004",
+                "M365-AP-005",
+                "M365-AU-012",
+                "M365-ESEO-001",
+                "M365-ESEO-004",
+                "M365-ESEO-005",
+                "M365-ESEO-006"
+            ],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "UEM-10": {
+            "title": "Software Firewall",
+            "control_specification": "Configure managed endpoints with properly configured software firewalls.",
+            "implementation_guidelines": "All managed endpoints should properly configure endpoint firewalls to inspect traffic, apply rules, and perform behavioral monitoring. These firewalls will protect the endpoint from malware and attacks originating from inside or outside the corporate network. For example, a web application firewall (WAF) should be used to protect web services from malicious attacks (e.g., structured query language (SQL) injection).",
+            "aws_tcbs": [
+                "AWS-APIG-001",
+                "AWS-CLFT-005",
+                "AWS-EC2-041",
+                "AWS-WAF-001"
+            ],
+            "aws_scbs": [
+                "AWS-SCB-34",
+                "AWS-SCB-43"
+            ],
+            "azure_tcbs": [
+                "AZ-CDN-001",
+                "AZ-DS-018",
+                "AZ-DS-024",
+                "AZ-NT-001",
+                "AZ-NT-002",
+                "AZ-NT-003",
+                "AZ-NT-004",
+                "AZ-NT-005",
+                "AZ-NT-016",
+                "AZ-POL-013"
+            ],
+            "azure_scbs": [
+                "AZ-SCB-35",
+                "AZ-SCB-57",
+                "AZ-SCB-72"
+            ],
+            "m365_tcbs": [
+                "M365-AP-001",
+                "M365-MDM-011"
+            ],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "UEM-14": {
+            "title": "Third-Party Endpoint Security Posture",
+            "control_specification": "Define, implement and evaluate processes, procedures and technical and/or contractual measures to maintain proper security of third-party endpoints with access to organizational assets.",
+            "implementation_guidelines": "The organization should perform due diligence before granting third party access to the organization's data or establishing connectivity (and periodically thereafter, commensurate with the risk level of the third-party relationship).\n\nWritten agreements (contracts) should be maintained and include an acknowledgment that the third party is responsible for the security of the data the third party possesses or otherwise stores, processes, or transmits on the organization\u2019s behalf. In addition, agreements should include requirements to address the information security risks associated with information and communications technology services (e.g., cloud computing services) and the product supply chain. These requirements are subsequently applicable to relevant, third-party (i.e., fourth parties)  subcontractors (and so on) throughout the supply chain.\n\nPersonnel security requirements should be established and documented\u2014including security roles and responsibilities for third-party providers coordinated and aligned with internal security roles and responsibilities. Monitor providers for compliance.\n\nAdditionally, the organization should have a screening process for contractors and third-party users. When organizations provide contractors, the contract should specify the organization's responsibilities for screening and relevant notification procedures if screening has not been completed (or if the results cause doubts or concerns). Similarly, third-party agreements should specify all responsibilities and notification procedures for screening.\n\nThird-party providers should notify a designated individual or role (e.g., a member of the contracting or supply chain function) of any personnel transfers or terminations of third-party personnel who possess organizational credentials, badges, or have information system privileges.\n\nFormal contracts should be employed that, at a minimum, specify:\na. The covered information\u2019s confidential nature and value.\nb. The security measures to be implemented and/or complied with. These include the organization's information security requirements and appropriate controls required by applicable federal laws, executive orders, directives, policies, regulations, standards and guidance, and third-party access limitations.\nc. The service levels to be achieved in the services provided.\nd. The format and frequency of reporting to the organization's information security management forum.\ne. The arrangement for representation of the third party in appropriate organizational meetings and working groups.\nf. The arrangements for third-party compliance auditing.\ng. The penalties exacted if any of the preceding specifications fail.\n\nMutually agreed-upon provisions and/or terms should be established to satisfy customer (tenant) requirements for service-to-service application (API), information processing interoperability, portability for application development and information exchange, usage, and integrity persistence.",
+            "aws_tcbs": [],
+            "aws_scbs": [],
+            "azure_tcbs": [],
+            "azure_scbs": [],
+            "m365_tcbs": [],
+            "m365_scbs": [],
+            "k8s_tcbs": [],
+            "k8s_scbs": []
+        },
+        "aws_scbs": [],
+        "azure_scbs": [],
+        "m365_scbs": [],
+        "acronym": "UEM",
+        "header_color": "2CBAEF",
+        "k8s_scbs": []
+    }
+}
